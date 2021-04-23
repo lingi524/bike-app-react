@@ -8,6 +8,6 @@ TBA
 
 ### Tools used
 
-REACT.js
-Weather API
-Location API
+REACT.js<br>
+CurrentWeatherMap API<br>
+Geolocation web API<br>
