@@ -1,8 +1,11 @@
 import React from "react";
+import bike from "./images/bike.png";
 
 function Slider () {
     return (
-        <p>Test</p>
+        <div>
+            <img className="bikeImg" src={bike} alt="Bike" />
+        </div>
     )
 }
 

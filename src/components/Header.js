@@ -2,7 +2,9 @@ import React from "react";
 
 function Header () {
     return (
-        <p>Test</p>
+        <div className="Header">
+            <h1>Time for?</h1>
+        </div>
     )
 }
 

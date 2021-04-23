@@ -2,7 +2,9 @@ import React from "react";
 
 function Answer () {
     return (
-        <p>Test</p>
+        <div className="Answer">
+        <p>YES GO</p>
+        </div>
     )
 }
 
