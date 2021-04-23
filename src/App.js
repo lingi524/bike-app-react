@@ -1,9 +1,16 @@
 import './App.css';
+import Header from './components/Header';
+import Weather from './components/Weather';
+import Slider from './components/Slider';
+import Answer from './components/Answer';
 
 function App() {
   return (
-    <div className="App">
-    <p>Hello there</p>
+    <div className="container">
+    <Header />
+    <Weather />
+    <Slider />
+    <Answer />
     </div>
   );
 }
