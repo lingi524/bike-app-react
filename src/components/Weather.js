@@ -1,7 +1,12 @@
-import React from "react";
-let cityName = "city"
+import React, { useState } from "react";
 
 function Weather () {
+    let [cityName, setCityName] = useState("Loading...")
+    let [weatherType, setWeatherType] = useState("Loading...")
+    let [temperature, setTemperature] = useState("Loading...")
+    let [perceivedTemperature, setPerceivedTemperature] = useState("Loading...")
+
+
     window.addEventListener("load", ()=> {
 
         let long;
@@ -12,7 +17,7 @@ function Weather () {
               position => {
                 long = position.coords.longitude;
                 lat = position.coords.latitude;
-                const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=f8b7d1603752f2b6d598d1cb2893c5b2`
+                const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=f8b7d1603752f2b6d598d1cb2893c5b2`
                 console.log(lat, long);
                 
                 
@@ -22,20 +27,21 @@ function Weather () {
                 })
                 .then (data => {
                     console.log(data);
-                    cityName = data.name;
-                    console.log(cityName+"Inside function")
+                    setCityName(data.name);
+                    setWeatherType(data.weather[0].description)
+                    setTemperature(data.main.temp)
+                    setPerceivedTemperature(data.main.feels_like)
                 });
                 });
 
         }
     });
-    console.log(cityName+"outside function")
    
     return (
-        <div>
-            <p></p>
-            <p>Weather info</p>
-            <p>Weather info</p>
+        <div className="weatherText">
+            <p>Should you go for a ride in {cityName}?</p>
+            <p>Right now there's {weatherType} and {temperature}°</p>
+            <p>It feels like {perceivedTemperature}°</p>
         </div>    
         )
 }
