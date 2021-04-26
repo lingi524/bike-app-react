@@ -1,6 +1,7 @@
 import React from "react";
 
-function Answer () {
+function Answer ({cityName}) {
+    console.log(cityName);
     return (
         <div className="Answer">
         <p>YES GO</p>

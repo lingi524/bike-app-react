@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Answer from "./Answer";
 
 function Weather () {
     let [cityName, setCityName] = useState("Loading...")
@@ -42,7 +43,8 @@ function Weather () {
             <p>Should you go for a ride in {cityName}?</p>
             <p>Right now there's {weatherType} and {temperature}°</p>
             <p>It feels like {perceivedTemperature}°</p>
-        </div>    
+            <Answer cityName={cityName} />
+        </div> 
         )
 }
 

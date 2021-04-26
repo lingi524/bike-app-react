@@ -2,7 +2,6 @@ import './App.css';
 import Header from './components/Header';
 import Weather from './components/Weather';
 import Slider from './components/Slider';
-import Answer from './components/Answer';
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
     <Header />
     <Weather />
     <Slider />
-    <Answer />
     </div>
   );
 }
