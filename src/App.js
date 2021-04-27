@@ -25,7 +25,6 @@ function App() {
               long = position.coords.longitude;
               lat = position.coords.latitude;
               const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=f8b7d1603752f2b6d598d1cb2893c5b2`
-              console.log(lat, long);
               
               
               fetch(api)
@@ -58,7 +57,16 @@ function App() {
       setPerceivedTemperature={setPerceivedTemperature}
     />
     <Slider />
-    <Answer />
+    <Answer 
+      cityName={cityName} 
+      setCityName={setCityName} 
+      weatherType={weatherType} 
+      setWeatherType={setWeatherType} 
+      temperature={temperature} 
+      setTemperature={setTemperature}
+      perceivedTemperature={perceivedTemperature}
+      setPerceivedTemperature={setPerceivedTemperature}
+    />
     </div>
   );
 }

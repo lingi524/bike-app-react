@@ -1,10 +1,10 @@
 import React from "react";
 
-function Answer ({cityName}) {
-    console.log(cityName);
+function Answer ({cityName, weatherType, temperature, perceivedTemperature}) {
+
     return (
         <div className="Answer">
-        <p>YES GO</p>
+        <p>{temperature<5?'STAY IN':'GO FOR IT'}</p>
         </div>
     )
 }
