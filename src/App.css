@@ -63,7 +63,7 @@ h1 {
 @media screen and (min-width: 1024px) and (max-height: 1310px) {
   /* Laptop */
   .bikeImg {
-    width: 25vw;
+    width: 30vw;
   }
 
   .weatherText {
