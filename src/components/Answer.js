@@ -1,6 +1,6 @@
-import React from "react";
+import React,  { useState } from "react";
 
-function Answer ({cityName, weatherType, temperature, perceivedTemperature}) {
+function Answer ({cityName, weatherType, weatherTypeMain, temperature, perceivedTemperature}) {
 
     return (
         <div className="Answer">

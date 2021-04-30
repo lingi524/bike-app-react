@@ -10,6 +10,7 @@ function App() {
 
   let [cityName, setCityName] = useState("Loading...");
   let [weatherType, setWeatherType] = useState("Loading...");
+  let [weatherTypeMain, setWeatherTypeMain] = useState("");
   let [temperature, setTemperature] = useState("Loading...");
   let [perceivedTemperature, setPerceivedTemperature] = useState("Loading...");
 
@@ -35,6 +36,7 @@ function App() {
                   console.log(data);
                   setCityName(data.name);
                   setWeatherType(data.weather[0].description)
+                  setWeatherTypeMain(data.weather[0].main)
                   setTemperature(data.main.temp)
                   setPerceivedTemperature(data.main.feels_like)
               });
@@ -51,6 +53,8 @@ function App() {
       setCityName={setCityName} 
       weatherType={weatherType} 
       setWeatherType={setWeatherType} 
+      weatherTypeMain={weatherTypeMain}
+      setWeatherTypeMain={setWeatherTypeMain}
       temperature={temperature} 
       setTemperature={setTemperature}
       perceivedTemperature={perceivedTemperature}
@@ -62,6 +66,8 @@ function App() {
       setCityName={setCityName} 
       weatherType={weatherType} 
       setWeatherType={setWeatherType} 
+      weatherTypeMain={weatherTypeMain}
+      setWeatherTypeMain={setWeatherTypeMain}
       temperature={temperature} 
       setTemperature={setTemperature}
       perceivedTemperature={perceivedTemperature}
