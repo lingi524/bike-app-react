@@ -13,6 +13,8 @@ function App() {
   let [weatherTypeMain, setWeatherTypeMain] = useState("");
   let [temperature, setTemperature] = useState("Loading...");
   let [perceivedTemperature, setPerceivedTemperature] = useState("Loading...");
+  let [Answer, SetAnswer] = useState("");
+
 
 
   window.addEventListener("load", ()=> {
@@ -39,6 +41,16 @@ function App() {
                   setWeatherTypeMain(data.weather[0].main)
                   setTemperature(data.main.temp)
                   setPerceivedTemperature(data.main.feels_like)
+
+                    if (temperature<5) {
+                    SetAnswer("Stanna inne")
+                    } else {
+                        SetAnswer("Go for it")
+                    }
+
+              })
+              .catch((error) => {
+                console.error("Error uppdating document: ", error);
               });
               });
 
@@ -72,6 +84,8 @@ function App() {
       setTemperature={setTemperature}
       perceivedTemperature={perceivedTemperature}
       setPerceivedTemperature={setPerceivedTemperature}
+      Answer={Answer}
+      SetAnswer={SetAnswer}
     />
     </div>
   );
