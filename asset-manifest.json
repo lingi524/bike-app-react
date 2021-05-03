@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/lingi524/bike-app-react/static/css/main.91ba35b0.chunk.css",
+    "main.js": "/lingi524/bike-app-react/static/js/main.f4f5d236.chunk.js",
+    "main.js.map": "/lingi524/bike-app-react/static/js/main.f4f5d236.chunk.js.map",
+    "runtime-main.js": "/lingi524/bike-app-react/static/js/runtime-main.2082e1b3.js",
+    "runtime-main.js.map": "/lingi524/bike-app-react/static/js/runtime-main.2082e1b3.js.map",
+    "static/js/2.ce66e6fc.chunk.js": "/lingi524/bike-app-react/static/js/2.ce66e6fc.chunk.js",
+    "static/js/2.ce66e6fc.chunk.js.map": "/lingi524/bike-app-react/static/js/2.ce66e6fc.chunk.js.map",
+    "index.html": "/lingi524/bike-app-react/index.html",
+    "static/css/main.91ba35b0.chunk.css.map": "/lingi524/bike-app-react/static/css/main.91ba35b0.chunk.css.map",
+    "static/js/2.ce66e6fc.chunk.js.LICENSE.txt": "/lingi524/bike-app-react/static/js/2.ce66e6fc.chunk.js.LICENSE.txt",
+    "static/media/mtb.f0c9e1ec.png": "/lingi524/bike-app-react/static/media/mtb.f0c9e1ec.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2082e1b3.js",
+    "static/js/2.ce66e6fc.chunk.js",
+    "static/css/main.91ba35b0.chunk.css",
+    "static/js/main.f4f5d236.chunk.js"
+  ]
+}
