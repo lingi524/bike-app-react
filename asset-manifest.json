@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bike-app-react/static/css/main.91ba35b0.chunk.css",
-    "main.js": "/bike-app-react/static/js/main.f4f5d236.chunk.js",
-    "main.js.map": "/bike-app-react/static/js/main.f4f5d236.chunk.js.map",
+    "main.js": "/bike-app-react/static/js/main.293b614e.chunk.js",
+    "main.js.map": "/bike-app-react/static/js/main.293b614e.chunk.js.map",
     "runtime-main.js": "/bike-app-react/static/js/runtime-main.56524457.js",
     "runtime-main.js.map": "/bike-app-react/static/js/runtime-main.56524457.js.map",
     "static/js/2.ce66e6fc.chunk.js": "/bike-app-react/static/js/2.ce66e6fc.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.56524457.js",
     "static/js/2.ce66e6fc.chunk.js",
     "static/css/main.91ba35b0.chunk.css",
-    "static/js/main.f4f5d236.chunk.js"
+    "static/js/main.293b614e.chunk.js"
   ]
 }
