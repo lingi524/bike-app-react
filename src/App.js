@@ -25,7 +25,7 @@ function App() {
             position => {
               long = position.coords.longitude;
               lat = position.coords.latitude;
-              const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=f8b7d1603752f2b6d598d1cb2893c5b2`
+              const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=f8b7d1603752f2b6d598d1cb2893c5b2`
               
               
               fetch(api)
