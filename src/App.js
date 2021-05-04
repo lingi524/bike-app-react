@@ -8,11 +8,11 @@ import Answer from './components/Answer';
 
 function App() {
 
-  let [cityName, setCityName] = useState("Loading...");
-  let [weatherType, setWeatherType] = useState("Loading...");
-  let [weatherTypeMain, setWeatherTypeMain] = useState("");
-  let [temperature, setTemperature] = useState("Loading...");
-  let [perceivedTemperature, setPerceivedTemperature] = useState("Loading...");
+  const [cityName, setCityName] = useState("Loading...");
+  const [weatherType, setWeatherType] = useState("Loading...");
+  const [weatherTypeMain, setWeatherTypeMain] = useState("");
+  const [temperature, setTemperature] = useState("Loading...");
+  const [perceivedTemperature, setPerceivedTemperature] = useState("Loading...");
 
 
   window.addEventListener("load", ()=> {
